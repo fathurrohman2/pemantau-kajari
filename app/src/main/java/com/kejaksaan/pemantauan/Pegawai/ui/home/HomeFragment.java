@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 
+import com.kejaksaan.pemantauan.CutiActivity;
 import com.kejaksaan.pemantauan.Pegawai.ui.laporan.ListLaporanPegawaiActivity;
 import com.kejaksaan.pemantauan.R;
 import com.kejaksaan.pemantauan.databinding.FragmentHomeBinding;
@@ -30,8 +31,14 @@ public class HomeFragment extends Fragment {
                 ViewModelProvider(this).get(HomeViewModel.class);
         binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.fragment_home, container, false);
 
-        binding.btnUbahprofil.setOnClickListener(v -> {
-            Navigation.findNavController(binding.getRoot()).navigate(R.id.nav_gallery);
+//        binding.btnUbahprofil.setOnClickListener(v -> {
+//            Navigation.findNavController(binding.getRoot()).navigate(R.id.nav_gallery);
+//        });
+        binding.btnUbahprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getContext().startActivity(new Intent(getContext(), CutiActivity.class));
+            }
         });
         binding.btnLaporan.setOnClickListener(v -> {
             getContext().startActivity(new Intent(getContext(), ListLaporanPegawaiActivity.class));
