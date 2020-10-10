@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Pegawai.ui.home.TambahLaporan">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                app:cardElevation="16dp"-->
+            <!--                app:cardCornerRadius="24dp">-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        android:layout_margin="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="140dp"
+                                android:layout_alignParentLeft="true"
+                                android:background="@color/green" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginStart="10dp"
+                                android:padding="16dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="4"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/logo" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:text="Halaman Laporan Pegawai"
+                                            android:textAppearance="?attr/textAppearanceBody2"
+                                            android:textColor="?android:attr/textColorSecondary" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="16dp"
+                                            android:text="Aplikasi E-KEPEGAWAIAN KEJAKSAAN NEGERI PURWOKERTO"
+                                            android:textAppearance="?attr/textAppearanceBody2"
+                                            android:textColor="?android:attr/textColorSecondary" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="Keterangan" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Isi Laporan"
+                            app:endIconMode="custom">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_ket"
+                                android:layout_width="match_parent"
+                                android:layout_height="?actionBarSize"
+                                android:inputType="textMultiLine"
+                                android:singleLine="false"
+                                android:maxLines="10" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="Bukti Laporan" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/iv_prev"
+                                    android:layout_width="match_parent"
+                                    android:scaleType="centerInside"
+                                    android:visibility="visible"
+                                    android:src="@drawable/media"
+                                    android:layout_height="200dp" />
+                            </FrameLayout>
+
+                            <Button
+                                android:id="@+id/btn_ambilgambar"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:backgroundTint="@color/putih"
+                                android:text="Ambil Gambar"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="@color/green"
+                                android:elevation="0dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                app:strokeColor="@color/green" />
+                        </LinearLayout>
+
+
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/mapview"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:visibility="invisible"
+                            android:layout_height="10dp" />
+
+                        <Button
+                            android:id="@+id/btn_simpan"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="40dp"
+                            android:elevation="0dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:shadowRadius="0"
+                            android:text="Simpan" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="**Pastikan data yang disimpan telah sesuai" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <!--            </androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Pegawai.ui.home.HomeFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:layout_margin="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="140dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/green" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="10dp"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Salam Hormat,"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="4"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/logo" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Selamat Pegawai Kejaksaan Negeri Purwokerto"
+                                        android:textAppearance="?attr/textAppearanceBody2"
+                                        android:textColor="?android:attr/textColorSecondary" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        android:text="Di Aplikasi E-KEPEGAWAIAN KEJAKSAAN NEGERI PURWOKERTO"
+                                        android:textAppearance="?attr/textAppearanceBody2"
+                                        android:textColor="?android:attr/textColorSecondary" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Menu"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_pegawai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Media -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/absens"
+                                android:scaleType="centerInside"
+                                android:contentDescription="Ubah Profil" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <!-- Title, secondary and supporting text -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cuti Pegawai"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+
+                            </LinearLayout>
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_ubahprofil"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="Detail"
+                                    style="?attr/borderlessButtonStyle" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_laporan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Media -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/laporan"
+                                android:scaleType="centerInside"
+                                android:contentDescription="Laporan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <!-- Title, secondary and supporting text -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Laporan"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+
+                            </LinearLayout>
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_laporan"
+                                style="?attr/borderlessButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:text="Detail" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_presensi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Media -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/pegawai"
+                                android:scaleType="centerInside"
+                                android:contentDescription="Catatan Harian" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <!-- Title, secondary and supporting text -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Catatan Harian"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+
+                            </LinearLayout>
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_catatan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="Detail"
+                                    style="?attr/borderlessButtonStyle" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_ubahpass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Media -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/belumabsensi"
+                                android:scaleType="centerInside"
+                                android:contentDescription="Ubah Password" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <!-- Title, secondary and supporting text -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ubah Password"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+
+                            </LinearLayout>
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_ubahpass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="Detail"
+                                    style="?attr/borderlessButtonStyle" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

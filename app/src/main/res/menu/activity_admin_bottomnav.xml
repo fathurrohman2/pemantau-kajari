@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_lokasi_admin"
+            android:icon="@drawable/ic_lokasi"
+            android:title="Pemantauan" />
+        <item
+            android:id="@+id/nav_tentang_admin"
+            android:icon="@drawable/ic_tentang"
+            android:title="Tentang" />
+
+</menu>

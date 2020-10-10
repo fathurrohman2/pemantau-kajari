@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.profil.UbahProfilFragment"
+        android:label="@string/menu_lokasi"
+        tools:layout="@layout/fragment_ubahprofil" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.tentang.TentangAplikasiFragment"
+        android:label="@string/menu_tentang"
+        tools:layout="@layout/fragment_tentangaplikasi" />
+    <fragment
+        android:id="@+id/nav_listcatatan"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.catatan.ListCatatanFragment"
+        android:label="Daftar Catatan"
+        tools:layout="@layout/list_catatan" />
+    <fragment
+        android:id="@+id/nav_tambahcatatan"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.catatan.TambahCatatanFragment"
+        android:label="Tambahkan Catatan"
+        tools:layout="@layout/tambah_catatan_fragment" />
+    <fragment
+        android:id="@+id/nav_detailcatatan"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.catatan.DetailCatatanFragment"
+        android:label="Detail Catatan"
+        tools:layout="@layout/detail_catatan_fragment" />
+    <fragment
+        android:id="@+id/nav_ubahpass"
+        android:name="com.kejaksaan.pemantauan.Pegawai.ui.profil.UbahPasswordFragment"
+        android:label="Ubah Password"
+        tools:layout="@layout/ubah_password_fragment" />
+</navigation>
